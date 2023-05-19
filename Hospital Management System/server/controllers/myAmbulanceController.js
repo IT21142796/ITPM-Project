@@ -2,8 +2,8 @@ const asyncHandler = require("express-async-handler");
 
 const MyAmbulance = require("../models/myAmbulanceModel");
 
-//@desc   Get goals
-//@route  GET /api/goals
+//@desc   Get myAmbulances
+//@route  GET /api/myAmbulances
 //@access Private
 const getMyAmbulances = asyncHandler(async (req, res) => {
   const myAmbulances = await MyAmbulance.find();
@@ -11,8 +11,8 @@ const getMyAmbulances = asyncHandler(async (req, res) => {
   res.status(200).json(myAmbulances);
 });
 
-//@desc   Set goals
-//@route  POST /api/goals
+//@desc   Set myAmbulances
+//@route  POST /api/myAmbulances
 //@access Private
 const setMyAmbulance = asyncHandler(async (req, res) => {
   if (!req.body.AmbulanceNumber) {
@@ -30,8 +30,8 @@ const setMyAmbulance = asyncHandler(async (req, res) => {
   res.status(200).json(myAmbulance);
 });
 
-//@desc   Update goals
-//@route  PUT /api/goals/:id
+//@desc   Update myAmbulances
+//@route  PUT /api/myAmbulances/:id
 //@access Private
 const updateMyAmbulance = asyncHandler(async (req, res) => {
   const myAmbulance = await MyAmbulance.findById(req.params.id);
@@ -51,8 +51,8 @@ const updateMyAmbulance = asyncHandler(async (req, res) => {
   res.status(200).json(updatedMyAmbulance);
 });
 
-//@desc   Delete goals
-//@route  DELETE /api/goals
+//@desc   Delete myAmbulances
+//@route  DELETE /api/myAmbulances
 //@access Private
 const deleteMyAmbulance = asyncHandler(async (req, res) => {
   const myAmbulance = await MyAmbulance.findByIdAndDelete(req.params.id);

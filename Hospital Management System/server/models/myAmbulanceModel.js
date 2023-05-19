@@ -11,11 +11,11 @@ const myAmbulanceSchema = mongoose.Schema(
       required: [true, "Please add the Ambulance Type"],
     },
     AmbulanceCapacity: {
-      type: String,
+      type: Number,
       required: [true, "Please add the Ambulance Capacity"],
     },
     ContactNumber: {
-      type: String,
+      type: Number,
       required: [true, "Please add the Contact Number"],
     },
   },
