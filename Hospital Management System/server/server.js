@@ -1,28 +1,38 @@
+//dependencies calling
 const express = require("express");
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
 const cors = require("cors");
-const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 const app = express();
-require("dotenv").config();
+require("dotenv").config()
 
-const PORT = process.env.PORT || 8070;
+//port declair
+const PORT = process.env.PORT || 8080;
 
-app.use(cors());
+app.use(cors())
 app.use(bodyParser.json());
 
-const URL = process.env.MONGODB_URL;
+const bloodrouter = require("./routes/bloodRouter");
+app.use("/blood", bloodrouter);
 
-mongoose.connect(URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const stationaryrouter = require("./routes/stationaryRouter");
+app.use("/stationary", stationaryrouter);
 
-const connection = mongoose.connection;
-connection.once("open", () => {
-  console.log("MongoDB Connection Success!");
-});
+const pharmacyrouter = require("./routes/pharmacyRouter");
+app.use("/pharmacy", pharmacyrouter);
 
-app.listen(PORT, () => {
-  console.log(`Server is up and running on Port: ${PORT}`);
-});
+//connect mongoose
+mongoose.connect(process.env.link , {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+ });
+
+ const connection = mongoose.connection;
+ connection.once("open", () => {
+     console.log("MongoDB Connection Success!");
+ });
+
+
+ app.listen(PORT, ()=>{
+    console.log(`The server is running on PORT ${PORT}`)
+})
