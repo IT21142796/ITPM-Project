@@ -1,0 +1,21 @@
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
