@@ -1,0 +1,123 @@
+.App {
+    display: flex;
+  }
+
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+  }
+  
+  .form-container {
+    max-width: 600px; 
+    margin-bottom: 20px;
+    padding: 40px;
+    border: 1px solid #f10e0e;
+    border-radius: 4px;
+    background-color: #c2d6ef; 
+  }
+  
+  .table-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .update-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #dcdcdc;
+  }
+  
+  /* React-toastify */
+  .Toastify__toast {
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .Toastify__toast--success {
+    background-color: #e6e6e6;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #e1a4a2;
+  }
+  
+  .Toastify__toast-body {
+    padding: 10px;
+  }
