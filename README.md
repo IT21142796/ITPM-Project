@@ -1,10 +1,10 @@
-#Contributors - GRP_100
-Group Leader - IT21142796 - Livera M.G.A.N (IT21142796)
-Member 2 - IT21129476 - N.N.M.H.Hirushan (IT21129476)
-Member 3 - IT21130052 - Dahanayake D.A.P.V.W (IT21130052)
-Member 4 - IT21006852 - H.A.T.S.Diwyanjali (IT21006852)
-
-# Hospital Items and Emergency Service Request System
+## Contributors - GRP_100
+- Group Leader - IT21142796 - Livera M.G.A.N (IT21142796)
+- Member 2 - IT21129476 - N.N.M.H.Hirushan (IT21129476)
+- Member 3 - IT21130052 - Dahanayake D.A.P.V.W (IT21130052)
+- Member 4 - IT21006852 - H.A.T.S.Diwyanjali
+- 
+# Hospital Item Request System
 
 This is the README file for the Hospital Item Request System, a web-based application that facilitates communication and resource exchange among registered hospitals. The system is built using the MERN stack (MongoDB, ExpressJS, React, and Node.js) and follows Agile development methodologies for iterative development and testing.
 
@@ -37,4 +37,4 @@ F. Benefits of the System: The system simplifies the request and distribution of
 
 G. Scalability: The system's architecture is designed to support a large number of users and requests. The development team continuously improves performance and scalability as more hospitals join the system.
 
-The Hospital Item Request System provides an efficient way for hospitals to seek and distribute resources, manage inventories, and receive timely alerts. With its user-friendly interface, technological features, and scalability, the system offers significant benefits to hospitals and healthcare professionals seeking to enhance their resource management.
+The contributors to this project are listed above.
